@@ -39,12 +39,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   https://lennyhuidverbetering.nl
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
+  Home pagina
   <img src="img-homescreen.jpg" width="375px" alt="screen homepagina">
+  <img src="img-homescreen2.jpg" width="375px" alt="screen homepagina 2">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="omschrijving van de pagina">
+  Bahandelingen pagina
+  <img src="img-secscreen.jpg" width="375px" alt="Behandelingen pagina">
  
 </details>
 
