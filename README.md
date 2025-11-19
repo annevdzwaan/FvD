@@ -40,12 +40,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Home pagina
-  <img src="img-homescreen.jpg" width="375px" alt="screen homepagina">
-  <img src="img-homescreen2.jpg" width="375px" alt="screen homepagina 2">
+  <img src="img-homescreen-iphone.jpg" width="375px" alt="screen homepagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Bahandelingen pagina
-  <img src="img-secscreen.jpg" width="375px" alt="Behandelingen pagina">
+  <img src="img-behandelingen.jpg" width="375px" alt="Behandelingen pagina">
  
 </details>
 
@@ -58,6 +57,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  We zijn begonnen met het testen met een slechtziende bril, elastiekjes om je handen en een reuma tester. Dit was erg interessant want je kon hierdoor zelf ervaren hoe het is om een 'beperking' te hebben. Ik kwam er achter dat het opzich redelijk te dien is, alleen slechtzien blijft lastig. Daarom heb ik daarna de WCAG checklist gedaan en hieruit bleek dat .....
 
 </details>
 
@@ -69,13 +69,13 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/Breakdownschets-1epagina-1.jpg" width="375px" alt="breakdown van de hele pagina deel 1">
+  <img src="readme-images/Breakdownschets-1epagina-2.jpg" width="375px" alt="breakdown van de hele pagina deel 2">
+  <img src="readme-images/Breakdownschets-1epagina-3.jpg" width="375px" alt="breakdown van de hele pagina deel 3">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/Breakdownschets-2epagina.jpg" width="375px" alt="breakdown van een dynamisch deel 2e pagina">
 
-  ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 

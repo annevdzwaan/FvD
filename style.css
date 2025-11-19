@@ -1,31 +1,218 @@
-/**************/
-/* CSS REMEDY */
-/**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+
+/* :root (met custom properties)
+Algemene stijlen + met Html en Body
+Header
+Footer
+Main
+Section 1
+Section 2
+Section … */
+
+
+.verborgen { /*https://www.perplexity.ai/search/hoe-maak-ik-mijn-h1-in-de-css-ednXDrpiS0OSAzZ5bg20PQ*/
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  border: 0;
 }
 
-
-
-
-
-
 /*********************/
-/* CUSTOM PROPERTIES */
+/* GENERALE STYLING */
 /*********************/
+
 :root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+    --merk-kleur: #cad400;  
+    --tekst-kleur: #333333;
+    --achtergrond: #fff;
+	--font: 'Poppins', sans-serif;
+	--ikbenlenny: 'Dancing Script', cursive;
+
+	--nav-padding: 0.7rem;
+    --nav-font: 0.9rem;
+}
+
+html, body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font);
+    color: var(--tekst-kleur);
+	line-height:  1.2;
+}
+
+header {
+    background: var(--achtergrond);
+	display: flex;               
+    justify-content: space-between; /* nav links / logo rechts */
+    align-items: center; /* verticaal centreren */
+  	position: fixed;
+  	width: 100%;
+	z-index: 1000;
+}
+
+header, button {
+	order: -1;
+}
+
+nav.toonMenu {
+	transform: translateX(0);
+  }
+
+nav{
+	position: fixed;    
+	top: 0;             
+	left: 0;          
+	right: 0;           
+	bottom: 0;          
+	background-color: var(--achtergrond); /* achtergrond, bv wit (of met transparantie) */
+	transform: translateX(-100%); /* start uit beeld naar links */
+	transition: transform 0.3s ease;
+}
+
+nav a {
+    display: block;
+    padding: var(--nav-padding);
+    text-decoration: none;
+    font-size: var(--nav-font);
+    color: var(--tekst-kleur);
+    font-weight: 600;
+	list-style: none;
+}
+
+nav a.aanwezig {
+    color: var(--merk-kleur);
+}
+
+header img {
+    display: block;
+    max-width: 40%;     
+    height: auto;
+}
+
+@media (min-width:60em) {
+	header > button {
+	  display: none;
+	}
+	nav {
+		position: static;      
+		 transform: unset;      
+		 padding: 0;            
+		 background: none;
+	}
+	nav button {
+		display: none;
+	}
+	nav ul {
+		display:flex;
+		gap:1em;
+		align-items:center;
+		list-style: none;
+	}
+}
+
+/*************************/
+/**** sectie bovenkant****/
+/*************************/
+
+.bovenkant {
+    position: relative;
+    width: 100%;
+    height: auto;
+	min-height: 40vh;
+
+    padding: 6rem 1.2rem 4rem 1.2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    background-image: url("../images/home-foto.jpg");
+    background-size: cover;
+    background-position: 80% center;
+    background-repeat: no-repeat;
+
+    color: white;
 }
 
 
+.bovenkant h2 {
+    font-size: 30px;
+    margin: 6rem 0 0.5rem 0;
+    max-width: 80%;
+}
 
 
+.bovenkant p {
+    font-size: 18px;
+    margin: 0 0 50px;
+    max-width: 80%;
+    line-height: 1.4;
+	
+}
 
-/****************/
-/* JOUW STYLING */
-/****************/
 
-/* jouw code */
+.bovenkant a {
+    position: absolute;
+    left: 50%;
+	top: 100%;        
+	transform: translate(-50%, -50%); 
 
+    background: white;
+    color: black;
+    text-decoration: none;
+
+    padding: 10px;
+    border-radius: 5px;
+
+    font-weight: 600;
+    font-size: 18px;
+
+    width: 85%;            
+    text-align: center;
+
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/***********************/
+/**** sectie ik ben ****/
+/***********************/
+
+.ikben{
+	padding: 80px 10px 80px 10px;
+}
+
+
+.ikben h2 {
+	font-size: 32px;
+}
+
+
+.ikben span{
+	font-family: var(--ikbenlenny);
+	font-size: 40px;
+	font-weight: 600;
+	display: inline-block;
+	transform: skewY(-3deg);
+	margin-left: 5%;
+}
+
+
+.ikben img{
+	display: block;
+    max-width: 60%;     
+    height: auto;
+	margin: 40px auto 0 auto;
+	border-radius: 50%;
+}
+
+.ikben h3{
+	font-size: 24px;
+}
