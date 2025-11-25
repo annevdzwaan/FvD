@@ -1,31 +1,235 @@
-/**************/
-/* CSS REMEDY */
-/**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+
+/* :root (met custom properties)
+Algemene stijlen + met Html en Body
+Header
+Footer
+Main
+Section 1
+Section 2
+Section … */
+
+
+.verborgen { /*https://www.perplexity.ai/search/hoe-maak-ik-mijn-h1-in-de-css-ednXDrpiS0OSAzZ5bg20PQ*/
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  border: 0;
 }
 
-
-
-
-
-
 /*********************/
-/* CUSTOM PROPERTIES */
+/* GENERALE STYLING */
 /*********************/
+
 :root {
-	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+    --merk-kleur: #cad400;  
+    --tekst-kleur: #333333;
+    --achtergrond: #fff;
+	--font: 'Poppins', sans-serif;
+	--ikbenlenny: 'Dancing Script', cursive;
+
+	--nav-padding: 0.7rem;
+    --nav-font: 0.9rem;
+}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+h1, h2, h3{
+	text-transform: uppercase; 
+}
+
+body {
+    margin: 0;
+    font-family: var(--font);
+    color: var(--tekst-kleur);
+	line-height:  1.2;
 }
 
 
+header {
+    background: var(--achtergrond);
+	display: flex;               
+    justify-content: space-between; 
+    align-items: center; 
+  	position: fixed;
+  	width: 100%;
+	z-index: 1000;
+}
+
+header button {
+	order: -1;
+	background: none;
+	border: none;
+}
+
+nav.toonMenu {
+	transform: translateX(0);
+  }
+
+nav{
+	position: fixed;    
+	top: 0;             
+	left: 0;          
+	right: 0;           
+	bottom: 0;          
+	background-color: var(--achtergrond); 
+	transform: translateX(-100%); /* start uit beeld naar links */
+	transition: transform 0.3s ease;
+}
+
+nav ul{
+	list-style: none;
+	text-align: center;
+}
+
+nav a {
+    display: block;
+    padding: var(--nav-padding);
+    text-decoration: none;
+    color: var(--tekst-kleur);
+	font-size: 18px;
+	font-weight: 400;
+}
+
+nav a.aanwezig {
+    color: var(--merk-kleur);
+}
+
+header img {
+    display: block;
+    max-width: 40%;     
+    height: auto;
+}
+
+@media (min-width:60em) { /*https://codepen.io/annevdzwaan/pen/VYazZgq*/
+	header > button {
+	  display: none;
+	}
+	nav {
+		position: static;      
+		 transform: unset;      
+		 padding: 0;            
+		 background: none;
+		 text-decoration: none;
+	}
+	nav button {
+		display: none;
+	}
+	nav ul {
+		display:flex;
+		gap:1.5rem;
+		align-items:center;
+		list-style: none;
+	}
+
+}
+
+/*************************/
+/**** sectie bovenkant****/
+/*************************/
+
+.bovenkant {
+    position: relative;
+    width: 100%;
+   height: 35rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	padding-left: 1em;
+	padding-right: 1em;
+    align-items: flex-start;
+
+    background-image: url("../images/home-foto.jpg");
+    background-size: cover;
+    background-position: 80% center;
+    background-repeat: no-repeat;
+
+    color: white;
+}
 
 
+.bovenkant h2 {
+    font-size: 2rem;
+    margin: 6rem 0 0.5rem 0;
+    max-width: 80%;
+}
 
-/****************/
-/* JOUW STYLING */
-/****************/
 
-/* jouw code */
+.bovenkant p {
+    font-size: 1.1rem;
+    margin: 0 0 3rem;
+    max-width: 80%;
+    line-height: 1.4;
+}
 
+
+.bovenkant a {
+	/* position: absolute; */
+    /* left: 50%;
+    top: 100%; */
+	/* bottom: 0%; */
+    /* transform: translate(-50%, -50%); */
+	display: block;
+
+    background: white;
+    color: black;
+    text-decoration: none;
+	text-transform: uppercase; 
+
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.3125rem;
+
+    font-weight: 600;
+    font-size: 1.125rem;
+
+    width: 85%;   
+	max-width: 420px;  
+     
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+/***********************/
+/**** sectie ik ben ****/
+/***********************/
+
+.ikben{
+	padding: 5rem 0.6rem 5rem 0.6rem;
+}
+
+
+.ikben h2 {
+	font-size: 2rem;
+}
+
+
+.ikben span{
+	font-family: var(--ikbenlenny);
+	font-size: 2.5rem;
+	font-weight: 600;
+	display: inline-block;
+	transform: skewY(-3deg);
+	margin-left: 5%;
+	text-transform: none;
+}
+
+
+.ikben img{
+	display: block;
+    max-width: 60%;     
+    height: auto;
+	margin: 2.5rem auto 0 auto;
+	border-radius: 50%;
+}
+
+.ikben h3{
+	font-size: 1.5rem;
+	font-weight: 400;
+}
