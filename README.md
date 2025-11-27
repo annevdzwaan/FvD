@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Blauw
 
   #### Je focus:
-  Focus op surface plane
+  Focus op responsive
  
 </details>
 
@@ -76,7 +76,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### dynamisch deel (bijv menu): 
   <img src="readme-images/Breakdownschets-2epagina.jpg" width="375px" alt="breakdown van een dynamisch deel 2e pagina">
 
-
 </details>
 
 
@@ -93,22 +92,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
+  Besproken tijdens meeting
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  - Indeling van H1, H2 enzovoort
+  - Detail summerre - voor een uitklap blokje
+  - Uppercase - de tekst wordt dan in hoofdletters, dit doen ipv alles al in hoofdletters typen.
+  - In mijn footer is de ul niet op de goede plek
+  - &quot; ipv “
+  - &copy;- voor copywrite teken 
+  - leer meer hierover entity references
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  Het verliep goed en ik had voor nu nog niet veel punten van verbetering. Wel de kleine puntjes van hier boven ga ik aanpassen. 
 
 </details>
 
@@ -122,26 +118,19 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  Wat ik lastig vond was dat ik de 	<a href="#" class="actie">Nu tijdelijk een proefbehandeling van €89 voor €69</a> niet goed kon stijlen. Het lukte mij en Ivo niet om de goede margin toe te voegen. uiteindelijk bleek er iets andersfout te gaan en dat was dat het element in de verkeerde section stond. hij moest helemaal niet in een section. toen dit was veranderd lukte dit wel. 
+
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
+  Besproken tijdens meeting
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  - 
+  - 
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+...
 
 </details>
 
@@ -230,8 +219,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. https://www.perplexity.ai/search/hoe-maak-ik-mijn-h1-in-de-css-ednXDrpiS0OSAzZ5bg20PQ
+  2. (https://codepen.io/annevdzwaan/pen/VYazZgq)
+  3. (https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_summary)
 
 </details>

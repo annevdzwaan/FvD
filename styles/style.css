@@ -20,6 +20,10 @@ Section … */
   border: 0;
 }
 
+
+
+
+
 /*********************/
 /* GENERALE STYLING */
 /*********************/
@@ -30,14 +34,18 @@ Section … */
     --achtergrond: #fff;
 	--font: 'Poppins', sans-serif;
 	--ikbenlenny: 'Dancing Script', cursive;
-
+	--wit: #fff;
 	--nav-padding: 0.7rem;
     --nav-font: 0.9rem;
+	--font-p: "Open Sans";
+
+	
 }
 
 html, body {
     width: 100%;
     overflow-x: hidden;
+	background-color: var(--achtergrond);
 }
 
 h1, h2, h3{
@@ -60,12 +68,28 @@ header {
   	position: fixed;
   	width: 100%;
 	z-index: 1000;
+	box-shadow: 0 4px 12px rgba(0,0,0,0.17);
 }
 
 header button {
 	order: -1;
 	background: none;
 	border: none;
+	margin-left: 10px;
+	cursor: pointer;
+  }
+
+header button img {
+	width: 35px; 
+	height: auto;
+	display: block;
+  }
+
+header > img {
+    display: block;
+    max-width: 125px;     
+    height: auto;
+	padding: 10px;
 }
 
 nav.toonMenu {
@@ -88,46 +112,43 @@ nav ul{
 	text-align: center;
 }
 
-nav a {
+nav a, details {
     display: block;
-    padding: var(--nav-padding);
+   padding: var(--nav-padding);
     text-decoration: none;
     color: var(--tekst-kleur);
 	font-size: 18px;
 	font-weight: 400;
 }
 
-nav a.aanwezig {
+ a.aanwezig {
     color: var(--merk-kleur);
 }
 
-header img {
-    display: block;
-    max-width: 40%;     
-    height: auto;
+
+.startvandaag h2{
+    color: #ECECEC;
 }
 
-@media (min-width:60em) { /*https://codepen.io/annevdzwaan/pen/VYazZgq*/
-	header > button {
-	  display: none;
-	}
-	nav {
-		position: static;      
-		 transform: unset;      
-		 padding: 0;            
-		 background: none;
-		 text-decoration: none;
-	}
-	nav button {
-		display: none;
-	}
-	nav ul {
-		display:flex;
-		gap:1.5rem;
-		align-items:center;
-		list-style: none;
-	}
 
+/*************************/
+
+.actie {
+	transform: translateY(-50%);
+    display: block;
+    background-color: var(--achtergrond);
+    color: var(--tekst-kleur);
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.3125rem;
+    font-weight: 600;
+    font-size: 1rem;
+    margin: auto;
+    width: 85%;
+	max-width: 50rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
 /*************************/
@@ -137,7 +158,7 @@ header img {
 .bovenkant {
     position: relative;
     width: 100%;
-   height: 35rem;
+    height: 30rem;
 
     display: flex;
     flex-direction: column;
@@ -148,10 +169,11 @@ header img {
 
     background-image: url("../images/home-foto.jpg");
     background-size: cover;
-    background-position: 80% center;
+    background-position: 70% center;
     background-repeat: no-repeat;
+	
 
-    color: white;
+    color: var(--wit);
 }
 
 
@@ -159,6 +181,9 @@ header img {
     font-size: 2rem;
     margin: 6rem 0 0.5rem 0;
     max-width: 80%;
+	font-weight: 600;
+	line-height: 1.7;
+	line-height: 1;
 }
 
 
@@ -166,54 +191,35 @@ header img {
     font-size: 1.1rem;
     margin: 0 0 3rem;
     max-width: 80%;
-    line-height: 1.4;
+	line-height: 1.5;
 }
 
 
-.bovenkant a {
-	/* position: absolute; */
-    /* left: 50%;
-    top: 100%; */
-	/* bottom: 0%; */
-    /* transform: translate(-50%, -50%); */
-	display: block;
 
-    background: white;
-    color: black;
-    text-decoration: none;
-	text-transform: uppercase; 
 
-    padding: 0.75rem 1.5rem;
-    border-radius: 0.3125rem;
 
-    font-weight: 600;
-    font-size: 1.125rem;
 
-    width: 85%;   
-	max-width: 420px;  
-     
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-}
+
 
 /***********************/
 /**** sectie ik ben ****/
 /***********************/
 
 .ikben{
-	padding: 5rem 0.6rem 5rem 0.6rem;
+	padding: 0rem 0.6rem 5rem 0.6rem;
 }
 
 
 .ikben h2 {
 	font-size: 2rem;
+	font-weight: 450;
 }
 
 
 .ikben span{
 	font-family: var(--ikbenlenny);
 	font-size: 2.5rem;
-	font-weight: 600;
+	font-weight: 400;
 	display: inline-block;
 	transform: skewY(-3deg);
 	margin-left: 5%;
@@ -223,13 +229,313 @@ header img {
 
 .ikben img{
 	display: block;
-    max-width: 60%;     
-    height: auto;
-	margin: 2.5rem auto 0 auto;
+	width: 50%;        /* neemt helft van de tekst+foto breedte */
+	max-width: 200px;  /* maar niet groter dan dit */
+	height: auto;
+	margin: 1rem auto 0 auto;
 	border-radius: 50%;
 }
 
 .ikben h3{
 	font-size: 1.5rem;
 	font-weight: 400;
+}
+
+.ikben p{
+	font-weight: 200;
+	font-size: 15px;
+	line-height: 1.78;
+}
+
+.ikben a{
+	text-transform: uppercase; 
+	text-decoration: none;
+	color: var(--tekst-kleur);
+	background-image: linear-gradient(90deg, var(--merk-kleur, #cad400) 0 100%);
+	background-size: 0% 100%;
+	background-repeat: no-repeat;
+	transition: background-size 0.35s cubic-bezier(.4,0,.2,1), color 0.25s;
+  }
+  
+  .ikben a:hover,
+  .ikben a:focus {
+	background-size: 100% 100%;
+	border-radius: 10px;
+	padding: 5px;
+  }
+
+
+
+
+
+/***********************/
+/** start vandaag nog **/
+/***********************/
+.startvandaag h2{
+	font-size: 8vw;
+	margin:0;
+	width: 100%;
+	padding: 0;
+}
+
+.blokken {
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;   /* blokken vullen de hele breedte */
+	list-style: none;
+	padding: 0 1rem;        /* beetje ruimte links/rechts */
+	margin: 0;
+	gap: 1rem; 
+  }
+
+
+.blok {
+	height: 25rem;        /* of min-height: 60vh; als je met viewport wilt schalen */
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 6px 20px rgba(0,0,0,0.10);
+	color: var(--wit);
+	overflow: hidden;
+
+	border: 3px solid transparent;      /*perplexity*/
+	box-sizing: border-box;
+	transition: border-color 0.2s ease;
+
+  }
+
+  .blokken h3{
+	color: var(--wit);
+	font-style: italic;
+	font-size: 24px;
+  }
+
+  
+  .behandeling { background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../images/behandeling-bollen.jpg"); }
+  .trainingen  { background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../images/lenny-stoel.jpg"); }
+  .producten   { background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../images/producten.jpg"); }
+
+
+
+
+/***********************/
+/** meetentreat **/
+/***********************/
+ .meetentreat{
+	padding: 0rem 0.6rem 5rem 0.6rem;
+ }
+  
+ .meetentreat h2{
+	font-size: 32px;
+	padding-top: 75px;
+	font-weight: 800;
+ }
+
+ .meetentreat p{
+	color:rgb(129, 134, 138);
+	margin: 0;
+	font-size: 16px;
+	font-weight: 300;
+	font-family: var(--font-p);
+	line-height: 24px;
+ }
+
+ .meetentreat strong{
+	font-weight: 650;
+ }
+
+ .meetentreat img{
+	display: block;
+	width: 100%;
+	max-width: 400px;
+	aspect-ratio: 1 / 1;    /* vierkant kader */
+	object-fit: cover;      /* snijdt netjes bij */
+	margin: 1rem auto 0 auto;
+	border-radius: 50%;
+
+ }
+
+
+/***********************/
+/******** actie ********/
+/***********************/
+
+details, header a:hover{
+	color: var(--merk-kleur);
+}
+
+.scrolled a:hover{
+	color: var(--merk-kleur);
+}
+
+summary:hover{
+	color: var(--merk-kleur);
+}
+
+.actie:hover{
+	color: var(--merk-kleur);
+	scale: 1.1;
+}
+
+.blok:hover{
+	border-color: var(--merk-kleur);
+}
+
+
+/***********************/
+/******** media ********/
+/***********************/
+@media (min-width: 780px) {
+
+	.ikben{
+	  display: flex;
+	  align-items: flex-start;
+	  gap: 2.8rem; 
+	  padding: 80px 20px 80px 20px;
+	}
+
+	.ikben img{
+	  margin-top: 3rem;
+	  width: 50%;        /* neemt helft van de tekst+foto breedte */
+	  max-width: 300px;
+	}
+
+	.ikben h2{
+	  font-size: 42px;
+	}
+
+  /*sectie startvandaag*/
+  .blokken {
+	  flex-direction: row; /* naast elkaar */
+	  justify-content: center; /* in het midden */
+	  align-items: stretch; /* gelijke hoogte */
+	  max-width: 90%;
+	  }
+  
+  .blok{
+	  height: 28vw;
+	  max-height: 480px;
+	  margin: 10;
+	  }
+	  
+	  
+  
+}
+
+  @media (min-width:1024px) { /*https://codepen.io/annevdzwaan/pen/VYazZgq*/
+	header{
+		background: none; 
+		background-color: transparent;
+	}
+	
+	header > button {
+	  display: none;
+	}
+
+	nav, nav.toonMenu{
+		position: static;      
+		transform: unset;      
+		padding: 0;            
+		background: none;
+		text-decoration: none;
+	}
+	nav button {
+		display: none;
+	}
+	nav ul {
+		display:flex;
+		gap:1.5rem;
+		align-items:center;
+		list-style: none;
+		margin-left: auto;
+		margin-right: 20px;
+	}
+
+	header a, details {
+		color: var(--wit);
+		text-transform: uppercase;
+		font-size: 16px;
+	}
+
+	header > img {
+		order: -1; /*Zorgt dat het logo voor de nav en andere elementen komt https://www.perplexity.ai/search/ik-wil-mijn-nav-li-naar-rechts-VvGmzfAoRRChb3fj_Xc9oA */
+		background-color: var(--achtergrond);
+	}
+
+	header.scrolled {
+		background-color: var(--achtergrond);
+		box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+		transition: background-color 0.3s ease, color 0.3s ease;
+	  }
+
+	header.scrolled a,
+	header.scrolled summary {
+		color: var(--tekst-kleur);
+		text-transform: uppercase;
+		font-size: 16px;
+	  }
+
+	  .bovenkant{
+		height: 40rem;
+		background-position: 80% center;
+	  }
+
+	  .bovenkant h2, .bovenkant p{
+		margin-left: 10rem;
+	  }
+
+	  .actie {
+		/* jouw aangepaste styles voor grote schermen */
+		font-size: 20px;
+		width: min(70%, 60rem);
+		padding: 20px 140px;
+	  }
+
+	  .ikben{
+		margin-right: 10rem;
+		
+	  }
+
+	  .ikben img{
+		margin-left: 8rem;
+		margin-top: 10rem;
+		width: 50%;        /* neemt helft van de tekst+foto breedte */
+		max-width: 450px;
+	  }
+
+	  .meetentreat {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 5rem;
+		padding: 5rem 8vw;
+	  }
+	
+	  .meetentreat img {
+		order: 2;          /* rechts */
+		flex: 0 0 35%;
+		max-width: 600px;
+		margin: 0;
+	  }
+	
+	  .meetentreat > div {
+		order: 1;          /* links */
+		flex: 1;
+	  }
+  }
+
+@media (prefers-color-scheme:dark) { /*https://dlo.mijnhva.nl/content/enforced/690110-FDMCI-CRS-00042507/FED%2025-26%20-%20Blok%202%20-%20Intro%20images,%20icons%20en%20co.pdf*/
+	:root {
+		--achtergrond: black;
+		--tekst-kleur: white;
+		--wit: black;
+	}
+
+
 }
