@@ -125,7 +125,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Agenda voor meeting
   Besproken tijdens meeting
 
-  - 
+  - Ik bij mijn blok .startvandaag de blokken een background img gegeven, maar om hem toegankelijk te maken is dit niet de beste oplossing. Omdat de screenreader dit niet kan lezen. Ik moet position absolute gebruiken.
+  - Ook hebben we gekeken naar de githup structuur en deze hebbenw e gelijk aangepast want hij wa sniet helemaal goed. De mappen stonden niet goed.
   - 
 
 
@@ -222,5 +223,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   1. https://www.perplexity.ai/search/hoe-maak-ik-mijn-h1-in-de-css-ednXDrpiS0OSAzZ5bg20PQ
   2. (https://codepen.io/annevdzwaan/pen/VYazZgq)
   3. (https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_summary)
+  4. https://www.w3schools.com/css/tryit.asp filename=trycss_image_text_center
+  5. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
 
 </details>
