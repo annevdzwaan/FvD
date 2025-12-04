@@ -40,11 +40,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Home pagina
-  <img src="img-homescreen-iphone.jpg" width="375px" alt="screen homepagina">
+  <img src="readme-images/img-homescreen-iphone.jpg" width="375px" alt="screen homepagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Bahandelingen pagina
-  <img src="img-behandelingen.jpg" width="375px" alt="Behandelingen pagina">
+  <img src="readme-images/img-behandelingen.jpg" width="375px" alt="Behandelingen pagina">
  
 </details>
 
@@ -220,10 +220,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. https://www.perplexity.ai/search/hoe-maak-ik-mijn-h1-in-de-css-ednXDrpiS0OSAzZ5bg20PQ
+  1. https://www.perplexity.ai
   2. (https://codepen.io/annevdzwaan/pen/VYazZgq)
   3. (https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_summary)
-  4. https://www.w3schools.com/css/tryit.asp filename=trycss_image_text_center
+  4. https://www.w3schools.com/css/tryit.aspfilename=trycss_image_text_center
   5. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+  6. https://www.perplexity.ai
 
 </details>

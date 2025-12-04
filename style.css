@@ -16,7 +16,7 @@ Section … */
   margin: -1px;
   padding: 0;
   overflow: hidden;
-  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
   border: 0;
 }
 
@@ -112,13 +112,19 @@ nav ul{
 	text-align: center;
 }
 
-nav a, details {
-    display: block;
-   padding: var(--nav-padding);
-    text-decoration: none;
-    color: var(--tekst-kleur);
-	font-size: 18px;
-	font-weight: 400;
+nav a,
+nav li details summary {
+  display: block;
+  padding: var(--nav-padding);
+  text-decoration: none;   
+  color: var(--tekst-kleur);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+nav summary {
+	list-style: none;
+	cursor: pointer;
 }
 
  a.aanwezig {
@@ -126,12 +132,10 @@ nav a, details {
 }
 
 
-.startvandaag h2{
-    color: #ECECEC;
-}
 
 
-/*************************/
+
+/*******actie*************/
 
 .actie {
 	transform: translateY(-50%);
@@ -151,8 +155,11 @@ nav a, details {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
+
+
+
 /*************************/
-/**** sectie bovenkant ****/
+/*** sectie bovenkant ****/
 /*************************/
 
 .bovenkant {
@@ -262,6 +269,7 @@ nav a, details {
 	margin:0;
 	width: 100%;
 	padding: 0;
+	color: #ECECEC;
 }
 
 .startvandaag h3{
@@ -276,7 +284,6 @@ nav a, details {
 
 .startvandaag ul{
 	padding: 0 20px; 
-	margin: 0;
 }
 
 .startvandaag li {
@@ -284,6 +291,7 @@ nav a, details {
 	list-style: none;
 	margin-bottom: 15px;
 	overflow: hidden;
+	aspect-ratio: 1 / 1; 
   }
   
 .startvandaag div {  /*https://www.w3schools.com/css/tryit.asp?filename=trycss_image_text_center */
@@ -299,6 +307,7 @@ nav a, details {
 	height: 20rem;
 	filter: brightness(80%);
 	object-fit: cover; 
+	height: 100%; 
   }
 
  
@@ -309,7 +318,6 @@ nav a, details {
   
   .startvandaag li:nth-child(2) img {
 	object-position: 20% 30%;;
-	transform: scale(1.0); 
   }
   
   .startvandaag li:nth-child(3) img {
@@ -370,8 +378,7 @@ nav a, details {
 	text-transform: uppercase; 
 	text-decoration: none;
 	color: var(--tekst-kleur);
-	background-image: linear-gradient(90deg, var(--merk-kleur, #cad400) 0 100%);
-	background-size: 0% 100%;
+	background-image: linear-gradient(90deg, var(--merk-kleur, #cad400) 0%, var(--merk-kleur, #cad400) 100%);	background-size: 0% 100%;
 	background-repeat: no-repeat;
 	transition: background-size 0.35s cubic-bezier(.4,0,.2,1), color 0.25s;
 	margin: 1.5rem;
@@ -401,7 +408,8 @@ nav a, details {
 /***********************/
 
 .klanten{
-	padding: 50px 10px;
+	padding: 50px 10px; 
+	overflow: hidden;
 }
 
 .klanten h2{
@@ -418,26 +426,27 @@ nav a, details {
 .klanten ul {
 	display: flex;           
 	flex-wrap: nowrap;
-	gap: 2rem;
 	list-style: none;
 	padding: 0;
 	margin: 0;
-	overflow: hidden;
+	animation: klanten-slide 15s infinite;
 }
 
 .klanten li {
-	flex: 0 0 100%;          /* https://css-tricks.com/snippets/css/a-guide-to-flexbox/ */
-	max-width: 40rem;
-	margin: 0 auto;
-  }
+	flex: 0 0 100vw;         
+	box-sizing: border-box;
+    margin: 0 auto;
+	align-items: center;
+}
 
 .klanten img {
 	display: block;
 	width: 150px;        
 	height: 150px;
-	margin: 50px auto 1.5rem 7.3rem; 
+	margin: 50px auto 1.5rem auto; 
 	border-radius: 50%;
-	overflow: hidden;
+	object-fit: cover;
+	
   }
 
 .klanten p{
@@ -445,6 +454,8 @@ nav a, details {
 	font-weight: 300;
 	line-height: 21px;
 	margin-bottom: 0;
+	padding: 0;
+	width: min(80vw, 40rem);
 }
 
 .klanten h3{
@@ -452,9 +463,12 @@ nav a, details {
 	margin-top: 5px;
 }
 
-
-
-
+@keyframes klanten-slide {  /* https://www.perplexity.ai */
+	0%, 25%   { transform: translateX(0); }
+	33%, 58%  { transform: translateX(-100%); }
+	66%, 91%  { transform: translateX(-200%); }
+	100%      { transform: translateX(0); }
+  }
 
 
 
@@ -491,12 +505,11 @@ summary:hover{
 
 
 
+/* ================================
+   Tablet 
+   ================================ */
 
-/***********************/
-/******** media ********/
-/***********************/
 @media (min-width: 780px) {
-
 	.ikben{
 	  display: flex;
 	  align-items: flex-start;
@@ -514,23 +527,78 @@ summary:hover{
 	  font-size: 42px;
 	}
 
-  /*sectie startvandaag*/
-  .blokken {
-	  flex-direction: row; /* naast elkaar */
-	  justify-content: center; /* in het midden */
-	  align-items: stretch; /* gelijke hoogte */
-	  max-width: 90%;
-	  }
+
+
+  /*sectie startvandaag*/		
   
-  .blok{
+	.blok{
 	  height: 28vw;
-	  max-height: 480px;
-	  margin: 10;
+	  margin: 10px;
 	  }
 	  
 	  
+	.startvandaag ul{
+	display: flex;
+	flex-direction: row;
+  	}
+
+	.startvandaag li:nth-child(2) img{
+		transform: scale(1.4);
+	}
+
+
+	.meetentreat{   /* student assistent en docent*/
+		display: grid;
+		grid-template-columns: 50% 50%;
+		gap: 0;
+		padding: 80px 20px;
+	  }
   
+	  .meetentreat img{
+		order: 2;
+        width: 100%;
+        max-width: 600px;
+        margin: 0;
+        grid-area: 1 / 2;
+	  }
+
+	  .meetentreat h2{
+		font-size: 42px;
+		margin-top: 0;
+		padding-top: 0;
+		line-height: 1;
+	  }
+
+	.meetentreat div{
+		margin-right: rem;
+	}
+
+	.meetentreat div:first-child{
+		margin-top: 2rem;
+		margin-bottom: 0;
+	}
+	
+	.meetentreat div:last-child{
+		grid-area: 2 / 1;
+		margin-top: -5rem;
+	}
+
+
+
+
+	.klanten p{
+		max-width: 80rem;   /* mag NIET groter worden */
+		width: 90vw;
+		margin-right: 0;
+	}
 }
+
+
+
+
+/* ================================
+   Web 
+   ================================ */
 
   @media (min-width:1024px) { /*https://codepen.io/annevdzwaan/pen/VYazZgq*/
 	header{
@@ -549,9 +617,11 @@ summary:hover{
 		background: none;
 		text-decoration: none;
 	}
+
 	nav button {
 		display: none;
 	}
+
 	nav ul {
 		display:flex;
 		gap:1.5rem;
@@ -561,14 +631,14 @@ summary:hover{
 		margin-right: 20px;
 	}
 
-	header a, details {
+	nav a, nav li details summary {
 		color: var(--wit);
 		text-transform: uppercase;
 		font-size: 16px;
 	}
 
 	header > img {
-		order: -1; /*Zorgt dat het logo voor de nav en andere elementen komt https://www.perplexity.ai/search/ik-wil-mijn-nav-li-naar-rechts-VvGmzfAoRRChb3fj_Xc9oA */
+		order: -1; /*Zorgt dat het logo voor de nav en andere elementen komt https://www.perplexity.ai */
 		background-color: var(--achtergrond);
 	}
 
@@ -586,6 +656,9 @@ summary:hover{
 		font-size: 16px;
 	  }
 
+
+
+
 	  .bovenkant{
 		height: 40rem;
 		background-position: 80% center;
@@ -601,38 +674,47 @@ summary:hover{
 		padding: 20px 140px;
 	  }
 
+
+
+
 	  .ikben{
 		margin-right: 10rem;
 		
 	  }
 
-	  .ikben img{
+	  .ikben img {
 		margin-left: 8rem;
 		margin-top: 10rem;
 		width: 50%;        /* neemt helft van de tekst+foto breedte */
 		max-width: 450px;
 	  }
 
-	  .meetentreat {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		gap: 5rem;
-		padding: 5rem 8vw;
+
+
+
+	  .meetentreat img{
+		margin-left: 4rem;
 	  }
+
+	.meetentreat div{
+		margin-left: 9rem;
+		margin-right: 3rem;
+	}
+
+	.meetentreat div:first-child{
+		margin-top: 8rem;
+		margin-bottom: 0;
+	}
 	
-	  .meetentreat img {
-		order: 2;          /* rechts */
-		flex: 0 0 35%;
-		max-width: 600px;
-		margin: 0;
-	  }
-	
-	  .meetentreat > div {
-		order: 1;          /* links */
-		flex: 1;
-	  }
+	.meetentreat div:last-child{
+		grid-area: 2 / 1;
+		margin-top: -5rem;
+	}
+
+
   }
+
+
 
 @media (prefers-color-scheme:dark) { /*https://dlo.mijnhva.nl/content/enforced/690110-FDMCI-CRS-00042507/FED%2025-26%20-%20Blok%202%20-%20Intro%20images,%20icons%20en%20co.pdf*/
 	:root {
