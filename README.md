@@ -165,9 +165,9 @@ In de eerste versie hadden de blokken in .startvandaag een background-image, maa
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
- Ik vond dit onderdeel lastig om te positioneren omdat dit niet lukte met flexbox. uiteindelijk zijn we erachter gekomen dat ik grid moest gebruiken.
+ Ik vond dit onderdeel lastig om te positioneren omdat dit niet lukte met flexbox. Uiteindelijk zijn we (student assistent en ik) erachter gekomen dat ik grid moest gebruiken.
 
- Maar ik heb het nogsteeds niet helemaal kunnen krijgen hoe ik wilde omdat er teveel witruimte nu zit tissen het eerste dee vand e tekst en de tweede. als ik meer tijd had had ik hier meer onderzoek naar willen doen.
+ Maar ik heb het nogsteeds niet helemaal kunnen krijgen hoe ik wilde, omdat er teveel witruimte nu zit tussen het eerste deel van de tekst en de tweede. Als ik meer tijd had had ik hier meer onderzoek naar willen doen en dit werkend willen maken. 
 
    <img src="readme-images/grid-oefening.jpg" width="375px" alt="wat ik moeilijk vond met grid">
 
@@ -180,7 +180,7 @@ In de eerste versie hadden de blokken in .startvandaag een background-image, maa
   - Dark mode
 
   ### Verslag van meeting
-  we gingen even snel door mijn website en keken of de responsive goed was. verder had ik niet veel veragen en kwam er uit dat ik lekker door moest gaan hoe het nu ging. Ook liet ik even de darkmode zien die was goed. 
+  We gingen even snel door mijn website en keken of de responsive goed was. Verder had ik niet veel veragen en kwam er uit dat ik lekker door moest gaan hoe het nu ging. Ook liet ik even de darkmode zien die was goed. 
 </details>
 
 
@@ -197,15 +197,18 @@ In de eerste versie hadden de blokken in .startvandaag een background-image, maa
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Ik heb geleerd hoe ik een hamburger menu maak. Ook heb ik geleerd om grid te gebruiken, dit kende ik nog niet. Darkmode/Lightmode en @media heb ik ook mee leren werken.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+
+  <img src="../basiswebsite/readme-images/Dark-lightmode.jpg" width="375px" alt="dark light mode">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Flexbox en grid blijft lastig, toch ging dit redelijk goed. 
+  Wat ik had willen toevoegen als ik meer tijd had waren meer animaties, bijvoorbeeld als je scrolled door de pagina dat de h2 van start vanaag nog mee scrold van links naar recht. 
+  Ook wilde ik de buttons helemaal hetzelfde maken maar dit vond ik te lastig dus heb ik dit gelaten voor als ik meer tijd zou hebben, wat niet het geval was dus.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="../basiswebsite/readme-images/button-h2.jpg" width="375px" alt="wat me nog niet is gelukt">
 </details>
 
 
@@ -218,11 +221,11 @@ In de eerste versie hadden de blokken in .startvandaag een background-image, maa
   <summary>continu bijhouden terwijl je werkt</summary>
 
   1. https://www.perplexity.ai
-  2. (https://codepen.io/annevdzwaan/pen/VYazZgq)
-  3. (https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_summary)
+  2. https://codepen.io/annevdzwaan/pen/VYazZgq
+  3. https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_summary
   4. https://www.w3schools.com/css/tryitaspfilename=trycss_image_text_center
   5. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   6. https://www.perplexity.ai
   7. https://blog.pope.tech/2022/07/12/what-you-need-to-know-about-aria-and-how-to-fix-common-mistakes/
-
+  8. https://css-tricks.com/snippets/css/complete-guide-grid/
 </details>
