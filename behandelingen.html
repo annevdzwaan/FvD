@@ -22,12 +22,12 @@
 <body class="behandelingenpagina">
 
 <header>
-	<button aria-hidden="true"><img src="images/button-menu.jpg" alt="hamburgermenu" /></button> <!--https://codepen.io/annevdzwaan/pen/VYazZgq-->
+	<button aria-label="hamburger menu openen" ><img src="images/button-menu.jpg" alt="hamburgermenu" ></button> <!--https://codepen.io/annevdzwaan/pen/VYazZgq  https://blog.pope.tech/2022/07/12/what-you-need-to-know-about-aria-and-how-to-fix-common-mistakes/-->
     <nav>
-	<button aria-hidden="true"><img src="images/button-sluit.jpg" alt="hamburger sluit" /></button>
-	<ul>
-		<li><a href="index.html" class="aanwezig">Home</a></li>
-		<li><a href="#">Behandelingen</a></li>
+        <button aria-label="hamburger menu sluiten"><img src="images/button-sluit.jpg" alt="hamburger sluit" ></button>
+        <ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="behandelingen.html" class="aanwezig">Behandelingen</a></li>
 		<li>
 			<details>
 				<summary>Producten</summary> <!--https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_summary -->
@@ -42,46 +42,99 @@
 		<li><a href="#">Contact</a></li>
 	  </ul>
     </nav>
-	<img src="images/logo.svg" alt="Logo van lenny">
+	<img src="images/logo.svg" alt="Logo naam van lenny met een blaadje">
 </header>
 
 <main>
 	<section class="bovenkant">
 		<h1>Behandelingen</h1>
 	</section>	
-	
+
+    <div class="behandelingtekst">
+        <p>Wil je graag je huid verbeteren omdat je last hebt van een droge, doffe, onrustige, vermoeide en/of steeds ouder wordende huid? Of wil je preventief zorgen dat je huid zo lang mogelijk in goede conditie is?</p>
+        <p>Met de juiste verzorgingsproducten, supplementen, leefstijladviezen en behandelingen kan jouw huid zichtbaar verbeteren. Omdat elke huid uniek is, bestaat er geen standaardbehandeling in mijn praktijk. Kom je voor de eerste keer? Dan start de reis naar een betere huid met een Meet & Treat behandeling, waarbij we niet alleen jouw huidwensen bespreken, maar ook jouw huid analyseren om het beste huidadvies aan te kunnen geven. Aansluitend volgt een behandeling aangepast op jouw huidwensen en huidconditie.</p>
+        <a href="#" class="button"><strong>Boek een meet en treat</strong></a>
+    </div>
+
+    <section class="soortenbehandelingen">
+        <ul>
+          <li>
+            <a href="https://www.youtube.com/watch?v=R1dDfeQlLsc" target="_blank">
+              <img src="images/bio-face-lifting-behandeling.jpg" alt="Bio Face Lifting video">
+            </a>
+            <h3>BIO FACE LIFTING</h3>
+            <p>Deze ontgiftende en liftende behandeling zorgt ervoor dat de dieper gelegen huidlagen worden gereinigd en afvalstoffen worden afgevoerd door de lymfe. Na een behandeling is de huid direct mooier van kleur en structuur</p>
+            <p>v.a. €89,-</p>
+          </li>
+      
+          <li>
+            <img src="images/scm-massage.jpg" alt="lenny doet een SCM bindweefselmassage bij klant">
+            <h3>SCM BINDWEEFSELMASSAGE</h3>
+            <p>Door verhardingen in het bindweefsel en gespannen gezichtsspieren ziet het gezicht er ouder uit dan het in werkelijkheid is. De SCM massage bewerkstelligt al rollend een keten van activiteit in het bindweefsel. De energie kan weer stromen – gezichtsuitdrukking ontspant.</p>
+            <p>v.a. €49,-</p>
+          </li>
+      
+          <li>
+            <a href="https://www.youtube.com/watch?v=UGP5nsm4b28&t=1s" target="_blank">
+              <img src="images/anti-tox-behandeling.jpg" alt="Anti-tox video">
+            </a>
+            <h3>ANTI-TOX</h3>
+            <p>Het doel van anti-tox is een extreem intensieve ontgifting tot in de dieper gelegen huidlagen. Ontgiften is een zeer effectieve manier voor het oplossen van veel huidproblemen. Afvalstoffen worden d.m.v magneten uit de huid getrokken. De huid krijgt weer nieuwe energie.</p>
+            <p>v.a. €129,-</p>
+          </li>
+        </ul>
+      </section>
+      
+
 </main>
 
 <footer>
-
-
-</footer>
-<footer>
-	<section>
+	<section class="onderkant">
 		<h2>Laat jouw uiterlijk én innerlijk stralen</h2>
 			<a href="#" class="button"><strong>Neem contact op</strong></a>
 			<img src="images/spiegel-vierkant.jpg" alt="Lenny die in spiegel haar huid reinigd">
 	</section>
 
-	
-	<h3>Adres</h3>
-		<p>Stommeerkade 2a <br>1431 EJ Aalsmeer</p>
-	<img src="images/anbos-logo.jpg" alt="Logo ANBOS">
-	<h3>Openingstijden</h3>
-		<p>Dinsdag: 8.00 - 15.00 uur <br> Woensdag: 8.00 - 15.00 uur <br> Vrijdag: 8.00 - 15.00 uur</p>
-		<a href="#" class="button"><strong>Behandeling op afspraak</strong></a>
-	<h3>Navigatie</h3>
+	<section class="footer">
+		<h3>Adres</h3>
+			<p>Stommeerkade 2a <br>1431 EJ Aalsmeer</p>
+			<img src="images/anbos-logo.jpg" alt="Logo ANBOS">
+		
+		<h3>Openingstijden</h3>
+			<p>Dinsdag: 8.00 - 15.00 uur <br> Woensdag: 8.00 - 15.00 uur <br> Vrijdag: 8.00 - 15.00 uur</p>
+			<a href="#" class="button">Behandeling op afspraak</a>
+		
+		<h3>Navigatie</h3>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="behandelingen.html">Behandelingen</a></li>
+				<li>
+					<details>
+						<summary>Producten</summary> <!--https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_summary -->
+						<ul>
+							<li><a href="#">Deynique</a></li>
+							<li><a href="#">Eqology</a></li>
+						</ul>
+					</details>
+				</li>
+				<li><a href="#">Trainingen</a></li>
+				<li><a href="#">Over mij</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		
+		<h3>Nieuwsbrief</h3>
+			<p>Blijf op de hoogte van de ontwikkelingen op huidadvies</p>
+	</section>
+
+	<div class="onderfooter">
 		<ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="#">Behandelingen</a></li>
-			<li><a href="#">Producten</a></li>
-			<li><a href="#">Trainingen</a></li>
-			<li><a href="#">Over mij</a></li>
-			<li><a href="#">Contact</a></li>
+			<li><p>&copy; Lenny Huidverbetering & Anti-Aging 2025</p></li>
+			<li><p>Gemaakt door Anne van der Zwaan</p></li>
+			<li><a href="https://lennyhuidverbetering.nl/wp-content/uploads/2021/07/privacy_statement_Lenny_20-07-2021.pdf">Privacyverklaring</a></li>
+			<li><a href="https://lennyhuidverbetering.nl/elementor-8660/">Algemene voorwaarden</a></li>
+			<li><p>KvK: 57130264</p></li>
 		</ul>
-	<h3>Nieuwsbrief</h3>
-		<p>Blijf op de hoogte van de ontwikkelingen op huidadvies</p>
-	
+	</div>
 </footer>
 
 </body>	

@@ -22,8 +22,6 @@ Section … */
 
 
 
-
-
 /*********************/
 /* GENERALE STYLING */
 /*********************/
@@ -36,10 +34,11 @@ Section … */
 	--ikbenlenny: 'Dancing Script', cursive;
 	--wit: #fff;
 	--nav-padding: 0.7rem;
-    --nav-font: 0.9rem;
-	--font-p: "Open Sans";
-
-	
+	--font-p: "Open Sans", sans-serif;	
+	--onderkant-achtergrond: #F8F3EF;
+	--onderfooter: #F7F7F7;
+	--font-grijs: #81868A;
+	--font-h2-startvandaag: #ECECEC;
 }
 
 html, body {
@@ -56,9 +55,16 @@ body {
     margin: 0;
     font-family: var(--font);
     color: var(--tekst-kleur);
-	line-height: 24px;
+	line-height: 1.5rem;
 }
 
+
+
+
+
+/*********************/
+/***** HEADER ********/
+/*********************/
 
 header {
     background: var(--achtergrond);
@@ -68,33 +74,36 @@ header {
   	position: fixed;
   	width: 100%;
 	z-index: 1000;
-	box-shadow: 0 1px 8px 0 rgba(0,0,0,0.2); 
+}
+
+header.scrolled {
+	box-shadow: 0 0.125rem 0.3125rem rgba(0,0,0,0.1);
 }
 
 header button {
-	order: -1;
+	/* order: -1; */
 	background: none;
 	border: none;
-	margin-left: 10px;
+	margin-left: 0.625rem;
 	cursor: pointer;
-  }
+}
 
 header button img {
-	width: 35px; 
+	width: 2.1875rem; 
 	height: auto;
 	display: block;
-  }
+}
 
 header > img {
-    display: block;
-    max-width: 125px;     
+    max-width: 7.8125rem;     
     height: auto;
-	padding: 10px;
+	padding: 0.625rem;
 }
 
 nav.toonMenu {
 	transform: translateX(0);
-  }
+	box-shadow: 0 0.0625rem 0.5rem 0 rgba(0,0,0,0.2); 
+}
 
 nav{
 	position: fixed;    
@@ -118,7 +127,7 @@ nav li details summary {
   padding: var(--nav-padding);
   text-decoration: none;   
   color: var(--tekst-kleur);
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 400;
 }
 
@@ -127,7 +136,7 @@ nav summary {
 	cursor: pointer;
 }
 
- a.aanwezig {
+a.aanwezig {
     color: var(--merk-kleur);
 }
 
@@ -135,9 +144,11 @@ nav summary {
 
 
 
-/*******actie*************/
+/*************************/
+/******* ACTIE ***********/
+/*************************/
 
-.actie {
+.actie {								/*hulp van docent en student assistent*/
 	transform: translateY(-50%);
     display: block;
     background-color: var(--achtergrond);
@@ -152,50 +163,44 @@ nav summary {
     width: 85%;
 	max-width: 50rem;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
 }
 
 
 
 
+
 /*************************/
-/*** sectie bovenkant ****/
+/*** SECTIE BOVENKANT ****/
 /*************************/
 
 .bovenkant {
+	color: var(--wit);
     position: relative;
     width: 100%;
-    height: 30rem;
-
+    height: 36rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
 	padding-left: 1em;
 	padding-right: 1em;
     align-items: flex-start;
-
-    background-image: url("../images/home-foto.jpg");
+    background-image:  linear-gradient(rgba(0,0,0,0.10), rgba(0,0,0,0.10)), url("../images/home-foto.jpg"); 
     background-size: cover;
     background-position: 70% center;
     background-repeat: no-repeat;
-	
-
-    color: var(--wit);
 }
 
-
 .bovenkant h2 {
-    font-size: 2rem;
-    margin: 6rem 0 0.5rem 0;
+    font-size: 2.5rem;
+    margin: 13rem 0 0.5rem 0;
     max-width: 80%;
 	font-weight: 600;
-	line-height: 1.7;
 	line-height: 1;
 }
 
-
 .bovenkant p {
-    font-size: 1.1rem;
+    font-size: 1.125rem;
     margin: 0 0 3rem;
     max-width: 80%;
 	line-height: 1.5;
@@ -205,23 +210,18 @@ nav summary {
 
 
 
-
-
-
 /***********************/
-/**** sectie ik ben ****/
+/**** SECTIE IK BEN ****/
 /***********************/
 
 .ikben{
 	padding: 0rem 0.6rem 5rem 0.6rem;
 }
 
-
 .ikben h2 {
 	font-size: 2rem;
 	font-weight: 450;
 }
-
 
 .ikben span{
 	font-family: var(--ikbenlenny);
@@ -230,15 +230,14 @@ nav summary {
 	display: inline-block;
 	transform: skewY(-3deg);
 	margin-left: 5%;
-	margin-top: 10px;
+	margin-top: 0.625rem;
 	text-transform: none;
 }
 
-
 .ikben img{
 	display: block;
-	width: 50%;        /* neemt helft van de tekst+foto breedte */
-	max-width: 200px;  /* maar niet groter dan dit */
+	width: 50%;        
+	max-width: 12.5rem;  
 	height: auto;
 	margin: 1rem auto 0 auto;
 	border-radius: 50%;
@@ -251,7 +250,7 @@ nav summary {
 
 .ikben p{
 	font-weight: 200;
-	font-size: 15px;
+	font-size: 0.9375rem;
 	line-height: 1.78;
 }
 
@@ -259,17 +258,17 @@ nav summary {
 
 
 
-
-
 /***********************/
-/** start vandaag nog **/
+/*SECTIE START VANDAAG */
 /***********************/
 .startvandaag h2{
 	font-size: 8vw;
 	margin:0;
 	width: 100%;
 	padding: 0;
-	color: #ECECEC;
+	color: var(--font-h2-startvandaag);
+	text-align: center;
+	line-height: 1;
 }
 
 .startvandaag h3{
@@ -283,15 +282,35 @@ nav summary {
 }
 
 .startvandaag ul{
-	padding: 0 20px; 
+	padding: 0 1.25rem; 
+	margin-top: 0;
+	display: flex;  
+	flex-direction: column; 
+	align-items: center;
+	list-style: none;
 }
 
 .startvandaag li {
 	position: relative;
 	list-style: none;
-	margin-bottom: 15px;
+	margin-top: 0;
+	margin-bottom: 0.9375rem;
 	overflow: hidden;
 	aspect-ratio: 1 / 1; 
+}
+
+.startvandaag li p {
+	color: var(--tekst-kleur);
+	font-weight: 500;
+	font-family: var(--font-p);
+	opacity: 0;  /*https://www.w3schools.com/cssref/css3_pr_opacity.php*/
+	display: inline-block;  
+	padding: 0.6rem 1rem; 
+	border: var(--merk-kleur);
+	border-radius:  62.4375rem;
+	background-color: var(--merk-kleur);
+	transform: translateY(0.625rem);
+	transition: opacity 0.2s ease, transform 0.2s ease;
   }
   
 .startvandaag div {  /*https://www.w3schools.com/css/tryit.asp?filename=trycss_image_text_center */
@@ -299,128 +318,113 @@ nav summary {
 	top: 40%;
 	width: 100%;
 	text-align: center;
-	font-size: 20px;
-  }
+	font-size: 1.25rem;
+}
   
-  .startvandaag img { 
+.startvandaag img { 
 	width: 100%;
-	height: 20rem;
 	filter: brightness(80%);
 	object-fit: cover; 
 	height: 100%; 
-  }
+}
 
- 
 .startvandaag li:nth-child(1) img {
 	object-position: 60% 20%; /* x% (links–rechts), y% (boven–onder) */
 	transform: scale(1.2); 
-  }
+}
   
-  .startvandaag li:nth-child(2) img {
-	object-position: 20% 30%;;
-  }
+.startvandaag li:nth-child(2) img {
+	object-position: 20% 30%;
+}
   
-  .startvandaag li:nth-child(3) img {
+.startvandaag li:nth-child(3) img {
 	transform: scale(1.2);
   	object-position: 95%;
-  }
+}
 
-  .blok {
+.blok {
 	border: 3px solid transparent;
 	transition: border-color 0.2s ease;
-  }
+}
 
-  .blok:hover {
-	border-color: var(--merk-kleur);
-  }
+
+
+
 
 
 
 /***********************/
-/**** meetentreat ******/
+/* SECTIE MEET EN TREAT */
 /***********************/
- .meetentreat{
+.meetentreat{
 	padding: 0rem 0.6rem 0rem 0.6rem;
- }
+}
   
- .meetentreat h2{
-	font-size: 32px;
-	padding-top: 75px;
-	margin-bottom: 15px;
- }
+.meetentreat h2{
+	font-size: 2rem;
+	padding-top: 4.6875rem;
+	margin-bottom: 0.9375rem;
+}
 
- .meetentreat p{
-	color:rgb(129, 134, 138);
+.meetentreat p{
+	color:var(--font-grijs);
 	margin: 0;
-	font-size: 16px;
+	font-size: 1rem;
 	font-weight: 320;
 	font-family: var(--font-p);
-	line-height: 24px;
- }
+	line-height: 1.5rem;
+}
 
- .meetentreat strong{
+.meetentreat strong{
 	font-weight: 650;
- }
+}
 
- .meetentreat img{
+.meetentreat img{
 	display: block;
 	width: 98%;
-	max-width: 400px;
+	max-width: 25rem;
 	aspect-ratio: 1 / 1;    /* vierkant kader */
 	object-fit: cover;      /* snijdt netjes bij */
 	margin: 3rem auto 2rem auto;
 	border-radius: 50%;
 	object-position: 58%;
- }
+}
 
- .button {
+.button {
 	display: inline-block;
 	text-transform: uppercase; 
 	text-decoration: none;
 	color: var(--tekst-kleur);
-	background-image: linear-gradient(90deg, var(--merk-kleur, #cad400) 0%, var(--merk-kleur, #cad400) 100%);	background-size: 0% 100%;
-	background-repeat: no-repeat;
 	transition: background-size 0.35s cubic-bezier(.4,0,.2,1), color 0.25s;
 	margin: 1.5rem;
-  }
-  
-  .button:hover,
-  .button:focus {
-	background-size: 100% 100%;
-	border-radius: 10px;
-	padding: 5px;
-  }
+}
 
   .meetentreat > div:last-of-type p {
 	font-style: italic;  
-  }
-
-
-
-
+}
 
 
 
 
 
 /***********************/
-/******** klanten ******/
+/*** SECTIE KLANTEN ****/
 /***********************/
 
 .klanten{
-	padding: 50px 10px; 
+	padding: 3.125rem 0.625rem 0 0.625rem; 
 	overflow: hidden;
 }
 
 .klanten h2{
-	font-size: 32px;
+	font-size: 2rem;
 }
 
 .klanten span{
 	display: inline-block;
 	background-color: var(--merk-kleur);
-	padding: 5px;
-	margin: 3px;
+	padding: 0.3125rem;
+	margin: 0.1875rem;
 }
 
 .klanten ul {
@@ -433,34 +437,33 @@ nav summary {
 }
 
 .klanten li {
-	flex: 0 0 100vw;         
+	flex: 0 0 100%;         
 	box-sizing: border-box;
-    margin: 0 auto;
 	align-items: center;
+	margin: 0.3125rem;
 }
 
 .klanten img {
 	display: block;
-	width: 150px;        
-	height: 150px;
-	margin: 50px auto 1.5rem auto; 
+	width: 9.375rem;        
+	height: 9.375rem;
+	margin: 3.125rem auto 1.5rem auto; 
 	border-radius: 50%;
 	object-fit: cover;
-	
-  }
+}
 
 .klanten p{
-	font-size: 14px;
+	font-size: 0.875rem;
 	font-weight: 300;
-	line-height: 21px;
-	margin-bottom: 0;
-	padding: 0;
-	width: min(80vw, 40rem);
+	line-height: 1.3125rem;
+	padding: 0 1rem; 
+	max-width: 90%;
 }
 
 .klanten h3{
 	color: var(--merk-kleur);
-	margin-top: 5px;
+	margin-top: 0.3125rem;
+	padding: 0 1rem; 
 }
 
 @keyframes klanten-slide {  /* https://www.perplexity.ai */
@@ -468,24 +471,123 @@ nav summary {
 	33%, 58%  { transform: translateX(-100%); }
 	66%, 91%  { transform: translateX(-200%); }
 	100%      { transform: translateX(0); }
-  }
+}
+
+
 
 
 
 /***********************/
-/******** actie ********/
+/* SECTION ONDERKANT ***/
 /***********************/
 
-details, header a:hover{
-	color: var(--merk-kleur);
+.onderkant{
+	background-color: var(--onderkant-achtergrond);
+	align-content: center;
+    align-items: center;
+	margin-top: 0.625rem;
 }
 
-.scrolled a:hover{
-	color: var(--merk-kleur);
+.onderkant h2{
+	font-size: 1.375rem;
+    line-height: 1.2em;
+    letter-spacing: 0.203125rem;
+	color: var(--tekst-kleur);
+	margin: 3.125rem 0 0 0.625rem;
 }
 
-summary:hover{
-	color: var(--merk-kleur);
+.onderkant img{
+	width: 100%;
+	max-width: none;          
+	height: 14vh;
+	object-fit: cover;        /* mooi uitsnijden */
+}
+
+
+
+
+
+/***********************/
+/******* FOOTER ********/
+/***********************/
+
+.footer{
+	padding: 0rem 0.6rem 0rem 0.6rem;
+}
+
+.footer h3{
+	font-size: 1.125rem;
+	margin-top: 1.25rem;
+}
+
+.footer p{
+	font-size: 0.875rem;
+}
+
+.footer img{
+	max-width: 50rem;
+	height: 2.3rem;
+}
+
+.footer > a.button{
+	font-size: 1rem;
+	font-weight: 100;
+	text-transform: none;
+}
+
+.footer ul{
+	list-style: none;
+	padding: 0;
+}
+
+.footer ul li a{
+	text-transform: none;
+	color: var(--tekst-kleur);
+	text-decoration: none;
+	font-size: 0.875rem;
+}
+
+
+
+
+
+/***********************/
+/**** ONDERFOOTER ******/
+/***********************/
+
+.onderfooter{
+	background-color: var(--onderfooter);
+	margin-top: 4rem;
+	margin-bottom: 0;
+}
+
+.onderfooter ul {
+	list-style: none;   
+	padding: 0.6rem;
+}
+
+.onderfooter p,
+.onderfooter a {
+	margin: 0;            /* margin verwijderen om collapsing te vermijden */
+	padding: 0.3125rem 0;      /* gelijkmatige binnenruimte boven en onder */
+	display: block;       /* maakt a block-level zoals p */
+	color: var(--tekst-kleur);
+	font-size: 0.875rem;
+	text-decoration: none;
+}
+
+
+
+
+
+/***********************/
+/******** HOVER ********/
+/***********************/
+
+details:hover, header a:hover,
+footer ul li a:hover, .scrolled a:hover,
+summary:hover {
+  color: var(--merk-kleur);
 }
 
 .actie:hover{
@@ -497,7 +599,101 @@ summary:hover{
 	border-color: var(--merk-kleur);
 }
 
+.startvandaag li:hover p,
+.startvandaag li:focus-within p { /*voor toegankelijkheid. https://www.perplexity.ai*/
+  opacity: 1; /*maakt hem weer zichtbaar*/
+  transform: translateY(0);
+}
 
+.button:hover,
+.button:focus {
+	background-color: var(--merk-kleur);
+	border-radius: 0.625rem;
+	padding: 0.3125rem;
+}
+
+
+
+
+
+
+
+
+
+
+/***********************/
+/***** 2E PAGINA ********/
+/***********************/
+
+.behandelingenpagina h1{
+	font-size: 2rem;
+    margin-left: 1rem;
+	margin-top: 0;
+    max-width: 80%;
+	font-weight: 600;
+	line-height: 1;
+	color: var(--wit);
+}
+
+.behandelingenpagina .bovenkant{
+	background-image: linear-gradient(rgba(0,0,0,0.20), rgba(0,0,0,0.20)), url("../images/behandeling-bollen.jpg");
+}
+
+.behandelingtekst{
+	margin: 1.25rem 0.625rem 0 0.625rem;
+	font-family: var(--font-p);
+}
+
+.behandelingtekst p:first-of-type{
+	line-height: 1.5;
+	font-weight: 550;
+	margin-bottom: 2rem;
+}
+
+
+/***********************/
+/* SOORTENBEHANDELINGEN */
+/***********************/
+
+.soortenbehandelingen {
+	padding: 2rem 1rem;
+}
+  
+.soortenbehandelingen ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+  
+.soortenbehandelingen li {
+	background-color: var(--achtergrond);
+	border: 1px solid var(--font-h2-startvandaag);
+	box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.08);
+	margin-bottom: 1.5rem;
+}
+
+.soortenbehandelingen li a img,
+.soortenbehandelingen li > img {
+  width: 100%;
+  height: 12.5rem;          /* overal zelfde hoogte */
+  object-fit: cover;      /* netjes bijsnijden */
+  display: block;
+}
+
+.soortenbehandelingen h3 {
+  font-size: 1.1rem;
+  margin: 2rem 1.25rem 0.5rem;
+}
+
+.soortenbehandelingen p {
+  margin: 0 1.25rem 0.75rem;
+  line-height: 1.5;
+  font-family: var(--font-p);
+}
+
+.soortenbehandelingen p:last-of-type {
+  margin-bottom: 3rem;  
+}
 
 
 
@@ -506,40 +702,44 @@ summary:hover{
 
 
 /* ================================
-   Tablet 
+   			TABLET 
    ================================ */
 
 @media (min-width: 780px) {
+
+.bovenkant h2{
+	margin-top: 1rem;
+}
+/*sectie ikben*/	
 	.ikben{
 	  display: flex;
 	  align-items: flex-start;
 	  gap: 2.8rem; 
-	  padding: 80px 20px 80px 20px;
+	  padding: 5rem 1.25rem 5rem 1.25rem;
 	}
 
 	.ikben img{
 	  margin-top: 3rem;
 	  width: 50%;        /* neemt helft van de tekst+foto breedte */
-	  max-width: 300px;
+	  max-width: 18.75rem;
 	}
 
 	.ikben h2{
-	  font-size: 42px;
+	  font-size: 2.625rem;
 	}
 
 
-
-  /*sectie startvandaag*/		
-  
+/*sectie startvandaag*/		  
 	.blok{
 	  height: 28vw;
-	  margin: 10px;
-	  }
-	  
+	  margin: 0.625rem;
+	}
 	  
 	.startvandaag ul{
-	display: flex;
-	flex-direction: row;
+		display: flex;
+		flex-direction: row;       /* naast elkaar */
+    	justify-content: center;   /* rij centreren */
+    	align-items: stretch;
   	}
 
 	.startvandaag li:nth-child(2) img{
@@ -547,30 +747,27 @@ summary:hover{
 	}
 
 
+/*sectie meetentreat*/	
 	.meetentreat{   /* student assistent en docent*/
 		display: grid;
 		grid-template-columns: 50% 50%;
 		gap: 0;
-		padding: 80px 20px;
-	  }
+		padding: 5rem 1.25rem;
+	}
   
-	  .meetentreat img{
+	.meetentreat img{
 		order: 2;
         width: 100%;
-        max-width: 600px;
+        max-width: 37.5rem;
         margin: 0;
         grid-area: 1 / 2;
-	  }
+	}
 
-	  .meetentreat h2{
-		font-size: 42px;
+	.meetentreat h2{
+		font-size: 2.625rem;
 		margin-top: 0;
 		padding-top: 0;
 		line-height: 1;
-	  }
-
-	.meetentreat div{
-		margin-right: rem;
 	}
 
 	.meetentreat div:first-child{
@@ -584,23 +781,132 @@ summary:hover{
 	}
 
 
+/*sectie klanten*/	
+	.klanten p, 
+	.klanten h3{
+		max-width: 90%;   
+		width: 100%;       
+		margin: 0 auto;
+	}
 
 
-	.klanten p{
-		max-width: 80rem;   /* mag NIET groter worden */
-		width: 90vw;
-		margin-right: 0;
+/*sectie klanten*/
+	.onderkant {
+		display: grid;
+		grid-template-columns: 55% 45%; 
+		margin-top: 9rem;
+	}	
+
+	.onderkant h2{
+		font-size: 2rem;
+		letter-spacing: normal;
+		padding: 0% 10% 0% 8%;
+		margin: 5rem 0 0 0.625rem;
+	}
+
+	.onderkant a{
+		padding: 0% 10% 0% 8%;
+	}
+
+	.onderkant .button {
+        padding: 0.3125rem;   
+        margin: 1.5rem 0  5rem 4.375rem;  
+        justify-self: start;   
+    }
+
+	.onderkant img{
+		grid-area: 1 / 2 / 3 / 3;
+		min-height: 100%;
+		object-fit: cover;
+	}
+
+
+/*footer*/
+	/* .footer {
+		display: flex;
+		flex-wrap: wrap;
+	} */
+
+	
+	.footer {  						/*https://www.perplexity.ai*/
+		display: grid;
+		grid-template-columns: repeat(4, minmax(0, 1fr));
+		column-gap: 3rem;
+		row-gap: 1rem;
+		align-items: flex-start;
+		margin: 0.625rem;
+	}
+
+	/* Kolom 1 */
+	.footer h3:nth-of-type(1) { grid-column: 1; grid-row: 1; }
+	.footer p:nth-of-type(1) { grid-column: 1; grid-row: 2; }
+	.footer img              { grid-column: 1; grid-row: 3; }
+
+	/* Kolom 2*/
+	.footer h3:nth-of-type(2) { grid-column: 2; grid-row: 1; }
+	.footer p:nth-of-type(2) { grid-column: 2; grid-row: 2; }
+	.footer .button           { grid-column: 2; grid-row: 3; }
+
+	/* Kolom 3*/
+	.footer h3:nth-of-type(3) { grid-column: 3; grid-row: 1; }
+	.footer ul                 { grid-column: 3; grid-row: 2 / 4; }
+
+	/* Kolom 4*/
+	.footer h3:nth-of-type(4) { grid-column: 4; grid-row: 1; }
+	.footer p:nth-of-type(3) { grid-column: 4; grid-row: 2; }
+
+	.footer h3{
+		margin-bottom: 0;
+	}
+
+	.footer a{
+		margin-top: 0;
+	}
+
+	.onderfooter ul{
+		display: flex;
+		flex-direction: row;
+		gap: 2rem;
+		justify-content: center; 
+	}
+
+
+
+/*2E PAGINA BEHANDLEINKEN*/
+	.behandelingenpagina h1{
+		font-size: 2.5rem;
+	}
+
+	.behandelingtekst p:first-of-type{
+		font-size: 1.125rem;
+	}
+
+	.behandelingtekst{
+		margin: 3.125rem 1.25rem 0rem 1.25rem;
+	}
+
+	.soortenbehandelingen ul {
+		display: flex;
+		justify-content: center;   /* rij centreren */
+		gap: 1.5rem;               /* ruimte tussen kaarten */
+	}
+	
+	.soortenbehandelingen li {
+		flex: 0 0 20rem;           /* vaste kaartbreedte, https://www.perplexity.ai */
+		margin-bottom: 0;
 	}
 }
 
 
 
 
-/* ================================
-   Web 
-   ================================ */
 
-  @media (min-width:1024px) { /*https://codepen.io/annevdzwaan/pen/VYazZgq*/
+/* ================================
+   				WEB 
+================================ */
+
+@media (min-width:1024px) { /*https://codepen.io/annevdzwaan/pen/VYazZgq*/
+/*header*/	
 	header{
 		background: none; 
 		background-color: transparent;
@@ -623,18 +929,18 @@ summary:hover{
 	}
 
 	nav ul {
-		display:flex;
-		gap:1.5rem;
-		align-items:center;
+		display: flex;
+		gap: 1.5rem;
+		align-items: center;
 		list-style: none;
 		margin-left: auto;
-		margin-right: 20px;
+		margin-right: 1.25rem;
 	}
 
 	nav a, nav li details summary {
 		color: var(--wit);
 		text-transform: uppercase;
-		font-size: 16px;
+		font-size: 1rem;
 	}
 
 	header > img {
@@ -644,57 +950,52 @@ summary:hover{
 
 	header.scrolled {
 		background-color: var(--achtergrond);
-		box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 		transition: background-color 0.3s ease, color 0.3s ease;
-		box-shadow: 0 4px 12px rgba(0,0,0,0.17);
+		box-shadow: 0 0.25rem 0.75rem rgba(0,0,0,0.17);
 	  }
 
 	header.scrolled a,
 	header.scrolled summary {
 		color: var(--tekst-kleur);
 		text-transform: uppercase;
-		font-size: 16px;
+		font-size: 1rem;
 	  }
 
 
-
-
+/*sectie bovenkant*/
 	  .bovenkant{
-		height: 40rem;
+		height: 32rem;
 		background-position: 80% center;
 	  }
 
 	  .bovenkant h2, .bovenkant p{
-		margin-left: 10rem;
+		margin-left: 1rem;
 	  }
 
 	  .actie {
-		font-size: 20px;
+		font-size: 1.25rem;
 		width: min(70%, 60rem);
-		padding: 20px 140px;
+		padding: 1.25rem 8.75rem;
 	  }
 
 
-
-
-	  .ikben{
+/*sectie ikben*/
+	.ikben{
 		margin-right: 10rem;
-		
-	  }
+	}
 
-	  .ikben img {
+	.ikben img {
 		margin-left: 8rem;
 		margin-top: 10rem;
 		width: 50%;        /* neemt helft van de tekst+foto breedte */
-		max-width: 450px;
-	  }
+		max-width: 28.125rem;
+	}
 
 
-
-
-	  .meetentreat img{
+/*sectie meetentreat*/	
+	.meetentreat img{
 		margin-left: 4rem;
-	  }
+	}
 
 	.meetentreat div{
 		margin-left: 9rem;
@@ -712,16 +1013,61 @@ summary:hover{
 	}
 
 
-  }
+/*sectie klanten*/
+	.klanten h2 {
+		max-width: 40rem;    /* zelfde leesbreedte als de teksten */
+		width: 100%;
+		margin: 0 auto 1rem; /* centraal in de sectie */
+		text-align: center;  /* tekst gecentreerd */
+	}
+
+	.klanten ul {
+		display: flex;
+		flex-wrap: nowrap;
+		width: 100%;
+		animation: none;     
+		transform: none;     
+		justify-content: center; 
+	}
+
+	.klanten li {
+		flex: 0 0 calc(33.333% - 1.25rem);  /* precies 3 naast elkaar, https://chatgpt.com*/ 
+		margin: 0.625rem;
+		box-sizing: border-box;
+	}
 
 
+	.behandelingtekst{
+		margin: 3.125rem 10% 3.125rem 10%;
+	}
+}
+
+
+
+
+
+/* ================================
+   				DARK 
+================================ */
 
 @media (prefers-color-scheme:dark) { /*https://dlo.mijnhva.nl/content/enforced/690110-FDMCI-CRS-00042507/FED%2025-26%20-%20Blok%202%20-%20Intro%20images,%20icons%20en%20co.pdf*/
 	:root {
 		--achtergrond: black;
 		--tekst-kleur: white;
 		--wit: black;
+		--onderkant-achtergrond: grey;
+		--onderfooter: darkgrey; 
 	}
 
+	.actie {
+		border: 0.125rem solid var(--merk-kleur);
+	  }
 
+	header.scrolled{
+		box-shadow: 0 0.125rem 0.75rem var(--merk-kleur);
+	}
+
+	.onderkant h2, .onderkant a, .onderfooter p, .onderfooter a{
+		color: black;
+	}
 }

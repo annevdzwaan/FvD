@@ -57,7 +57,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
-  We zijn begonnen met het testen met een slechtziende bril, elastiekjes om je handen en een reuma tester. Dit was erg interessant want je kon hierdoor zelf ervaren hoe het is om een 'beperking' te hebben. Ik kwam er achter dat het opzich redelijk te dien is, alleen slechtzien blijft lastig. Daarom heb ik daarna de WCAG checklist gedaan en hieruit bleek dat .....
+  We zijn begonnen met het testen met een slechtziende bril, elastiekjes om je handen en een reuma tester. Dit was erg interessant want je kon hierdoor zelf ervaren hoe het is om een 'beperking' te hebben. Ik kwam er achter dat het opzich redelijk te dien is, alleen slechtzien blijft lastig. Daarom heb ik daarna de WCAG checklist gedaan en hieruit bleek dat de website goed scoort op headings, links, images (naast background img) en contrast, maar faalt op focus states (outline: none !important), text resizing (fixed px fonts), en ontbrekende dark/high-contrast mode support.
+
+  [WCAG document](<FED 25-26 - Blok 2 - WCAG checklist.docx>)
 
 </details>
 
@@ -126,12 +128,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Besproken tijdens meeting
 
   - Ik bij mijn blok .startvandaag de blokken een background img gegeven, maar om hem toegankelijk te maken is dit niet de beste oplossing. Omdat de screenreader dit niet kan lezen. Ik moet position absolute gebruiken.
-  - Ook hebben we gekeken naar de githup structuur en deze hebbenw e gelijk aangepast want hij wa sniet helemaal goed. De mappen stonden niet goed.
+  - Ook hebben we gekeken naar de githup structuur en deze hebben we gelijk aangepast want hij was niet helemaal goed. De mappen stonden niet goed.
   - 
 
 
   ### Verslag van meeting
-...
+In de eerste versie hadden de blokken in .startvandaag een background-image, maar dat bleek niet toegankelijk omdat screenreaders deze afbeeldingen niet kunnen interpreteren. Daarom vervang ik de achtergrondafbeeldingen door echte img‑elementen met alt‑teksten en positioneer ik de tekst erboven met position: absolute. Daarnaast is de GitHub‑structuur opgeschoond, zodat alle bestanden nu logisch in aparte mappen zijn georganiseerd.
 
 </details>
 
@@ -145,7 +147,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  <!-- Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is): -->
+
+  Wat er verbetert is aan de website is dat er minder background img zijn gebruikt wat beter is voor de screenreader. ook is er een dark/light mode toegevoegd wat deze was er helemaal niet. 
+
+  [WCAG test eigen website](<FED 25-26 - Blok 2 - WCAG checklist eigen website.docx>)
 
 </details>
 
@@ -159,27 +165,22 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+ Ik vond dit onderdeel lastig om te positioneren omdat dit niet lukte met flexbox. uiteindelijk zijn we erachter gekomen dat ik grid moest gebruiken.
+
+ Maar ik heb het nogsteeds niet helemaal kunnen krijgen hoe ik wilde omdat er teveel witruimte nu zit tissen het eerste dee vand e tekst en de tweede. als ik meer tijd had had ik hier meer onderzoek naar willen doen.
+
+   <img src="readme-images/grid-oefening.jpg" width="375px" alt="wat ik moeilijk vond met grid">
+
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
+  Besproken tijdens meeting
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
+  - Meeschalen
+  - Dark mode
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
-
+  we gingen even snel door mijn website en keken of de responsive goed was. verder had ik niet veel veragen en kwam er uit dat ik lekker door moest gaan hoe het nu ging. Ook liet ik even de darkmode zien die was goed. 
 </details>
 
 
@@ -216,15 +217,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 <details open>
   <summary>continu bijhouden terwijl je werkt</summary>
 
-  Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg). 
-  Nb. ChatGpT en andere AI horen er ook bij.
-  Nb. Vermeld de bronnen ook in je code.
-
   1. https://www.perplexity.ai
   2. (https://codepen.io/annevdzwaan/pen/VYazZgq)
   3. (https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_summary)
-  4. https://www.w3schools.com/css/tryit.aspfilename=trycss_image_text_center
+  4. https://www.w3schools.com/css/tryitaspfilename=trycss_image_text_center
   5. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
   6. https://www.perplexity.ai
+  7. https://blog.pope.tech/2022/07/12/what-you-need-to-know-about-aria-and-how-to-fix-common-mistakes/
 
 </details>
