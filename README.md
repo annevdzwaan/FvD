@@ -76,7 +76,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <img src="readme-images/Breakdownschets-1epagina-3.jpg" width="375px" alt="breakdown van de hele pagina deel 3">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/Breakdownschets-2epagina.jpg" width="375px" alt="breakdown van een dynamisch deel 2e pagina">
+  <img src="readme-images/Breakdownschets-2epagina.jpeg" width="375px" alt="breakdown van een dynamisch deel 2e pagina">
 
 </details>
 
@@ -151,7 +151,7 @@ In de eerste versie hadden de blokken in .startvandaag een background-image, maa
 
   Wat er verbetert is aan de website is dat er minder background img zijn gebruikt wat beter is voor de screenreader. ook is er een dark/light mode toegevoegd wat deze was er helemaal niet. 
 
-  <img src="../basiswebsite/FED 25-26 - Blok 2 - WCAG checklist eigen website.jpg" width="375px" alt="toegankelijkheidstest website van eigen website">
+  <img src="../basiswebsite/FED 25-26 - Blok 2 - WCAG checklist eigen website.jpeg" width="375px" alt="toegankelijkheidstest website van eigen website">
 
 
 </details>
