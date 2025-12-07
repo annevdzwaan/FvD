@@ -61,7 +61,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
  ### WCAG Test Document:
 **[Volledige WCAG Checklist]**  
-(FED 25-26 - Blok 2 - WCAG checklist.pdf)
+(FED_25-26_-_Blok_2_-_WCAG_checklist.pdf)
 
 </details>
 
