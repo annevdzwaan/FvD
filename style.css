@@ -1,5 +1,5 @@
 
-.verborgen { /*https://www.perplexity.ai/search/hoe-maak-ik-mijn-h1-in-de-css-ednXDrpiS0OSAzZ5bg20PQ*/
+.verborgen { /*https://www.anysurfer.be/nl/documentatie/artikels/detail/verborgen-tekst*/
   position: absolute;
   width: 1px;
   height: 1px;
@@ -664,8 +664,8 @@ summary:hover {
 .soortenbehandelingen li a img,
 .soortenbehandelingen li > img {
   width: 100%;
-  height: 12.5rem;          /* overal zelfde hoogte */
-  object-fit: cover;      /* netjes bijsnijden */
+  height: 12.5rem;          
+  object-fit: cover;      
   display: block;
 }
 
