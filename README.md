@@ -59,7 +59,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Lijst met je bevindingen die in de test naar voren kwamen:
   We zijn begonnen met het testen met een slechtziende bril, elastiekjes om je handen en een reuma tester. Dit was erg interessant want je kon hierdoor zelf ervaren hoe het is om een 'beperking' te hebben. Ik kwam er achter dat het opzich redelijk te dien is, alleen slechtzien blijft lastig. Daarom heb ik daarna de WCAG checklist gedaan en hieruit bleek dat de website goed scoort op headings, links, images (naast background img) en contrast, maar faalt op focus states (outline: none !important), text resizing (fixed px fonts), en ontbrekende dark/high-contrast mode support.
 
-<img src="../basiswebsite/readme-images/FED 25-26 - Blok 2 - WCAG checklist.jpeg" width="375px" alt="toegankelijkheidstest website van lenny">
+<img src="../basiswebsite/readme-images/fed25-26-blok2-wcagchecklist.jpeg" width="375px" alt="toegankelijkheidstest website van lenny">
 
 </details>
 
@@ -151,7 +151,7 @@ In de eerste versie hadden de blokken in .startvandaag een background-image, maa
 
   Wat er verbetert is aan de website is dat er minder background img zijn gebruikt wat beter is voor de screenreader. ook is er een dark/light mode toegevoegd wat deze was er helemaal niet. 
 
-  <img src="../basiswebsite/readme-images/FED 25-26 - Blok 2 - WCAG checklist eigen website.jpeg" width="375px" alt="toegankelijkheidstest website van eigen website">
+  <img src="../basiswebsite/readme-images/fed25-26-blok2-wcagchecklist-eigenwebsite.jpeg" width="375px" alt="toegankelijkheidstest website van eigen website">
 
 
 </details>
