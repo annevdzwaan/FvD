@@ -194,7 +194,7 @@ In de eerste versie hadden de blokken in .startvandaag een background-image, maa
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="../basiswebsite/readme-images/bovenwebsite.jpg" width="375px" alt="uitkomst eigen website">
 
 
   ### Dit ging goed/Heb ik geleerd: 
@@ -229,4 +229,6 @@ In de eerste versie hadden de blokken in .startvandaag een background-image, maa
   6. https://www.perplexity.ai
   7. https://blog.pope.tech/2022/07/12/what-you-need-to-know-about-aria-and-how-to-fix-common-mistakes/
   8. https://css-tricks.com/snippets/css/complete-guide-grid/
+  9. https://www.w3schools.com/cssref/pr_pos_z-index.php
+  10. https://codepen.io/annevdzwaan/pen/qEZEqVv
 </details>

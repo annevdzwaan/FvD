@@ -1,14 +1,4 @@
 
-/* :root (met custom properties)
-Algemene stijlen + met Html en Body
-Header
-Footer
-Main
-Section 1
-Section 2
-Section … */
-
-
 .verborgen { /*https://www.perplexity.ai/search/hoe-maak-ik-mijn-h1-in-de-css-ednXDrpiS0OSAzZ5bg20PQ*/
   position: absolute;
   width: 1px;
@@ -73,7 +63,7 @@ header {
     align-items: center; 
   	position: fixed;
   	width: 100%;
-	z-index: 1000;
+	z-index: 1000;  /*  Header ligt ALTIJD bovenop andere elementen https://www.w3schools.com/cssref/pr_pos_z-index.php*/
 }
 
 header.scrolled {
@@ -81,11 +71,10 @@ header.scrolled {
 }
 
 header button {
-	/* order: -1; */
 	background: none;
 	border: none;
 	margin-left: 0.625rem;
-	cursor: pointer;
+	cursor: pointer; /* ← Button ziet eruit als KLIKBAAR, er komt als muis een handje */
 }
 
 header button img {
@@ -228,7 +217,7 @@ a.aanwezig {
 	font-size: 2.5rem;
 	font-weight: 400;
 	display: inline-block;
-	transform: skewY(-3deg);
+	transform: skewY(-3deg); /*https://codepen.io/annevdzwaan/pen/qEZEqVv*/
 	margin-left: 5%;
 	margin-top: 0.625rem;
 	text-transform: none;
@@ -296,7 +285,7 @@ a.aanwezig {
 	margin-top: 0;
 	margin-bottom: 0.9375rem;
 	overflow: hidden;
-	aspect-ratio: 1 / 1; 
+	aspect-ratio: 1 / 1; /*maakt vierkant*/
 }
 
 .startvandaag li p {
@@ -384,7 +373,7 @@ a.aanwezig {
 	width: 98%;
 	max-width: 25rem;
 	aspect-ratio: 1 / 1;    /* vierkant kader */
-	object-fit: cover;      /* snijdt netjes bij */
+	object-fit: cover;     
 	margin: 3rem auto 2rem auto;
 	border-radius: 50%;
 	object-position: 58%;
@@ -500,7 +489,7 @@ a.aanwezig {
 	width: 100%;
 	max-width: none;          
 	height: 14vh;
-	object-fit: cover;        /* mooi uitsnijden */
+	object-fit: cover;        
 }
 
 
@@ -568,9 +557,9 @@ a.aanwezig {
 
 .onderfooter p,
 .onderfooter a {
-	margin: 0;            /* margin verwijderen om collapsing te vermijden */
-	padding: 0.3125rem 0;      /* gelijkmatige binnenruimte boven en onder */
-	display: block;       /* maakt a block-level zoals p */
+	margin: 0;           
+	padding: 0.3125rem 0;      
+	display: block;      
 	color: var(--tekst-kleur);
 	font-size: 0.875rem;
 	text-decoration: none;
@@ -820,12 +809,6 @@ summary:hover {
 		object-fit: cover;
 	}
 
-
-/*footer*/
-	/* .footer {
-		display: flex;
-		flex-wrap: wrap;
-	} */
 
 	
 	.footer {  						/*https://www.perplexity.ai*/
