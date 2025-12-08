@@ -221,7 +221,7 @@ In de eerste versie hadden de blokken in .startvandaag een background-image, maa
 <details open>
   <summary>continu bijhouden terwijl je werkt</summary>
 
-  1. https://www.perplexity.ai
+  1. https://www.anysurfer.be/nl/documentatie/artikels/detail/verborgen-tekst
   2. https://codepen.io/annevdzwaan/pen/VYazZgq
   3. https://www.w3schools.com/tags/tryit.asp?filename=tryhtml5_summary
   4. https://www.w3schools.com/css/tryitaspfilename=trycss_image_text_center
